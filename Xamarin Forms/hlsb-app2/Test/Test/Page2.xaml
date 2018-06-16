@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Page2"
+            
+             Title="Product"
+             >
+
+   <!-- <ContentPage.BindingContext>
+        <ViewModels:MainViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+    <ListView ItemsSource="{Binding EmployeesList}" HasUnevenRows="True">
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                
+                   
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding Name}"/>
+                        <Label Text="{Binding Department}"/>
+                    </StackLayout>
+                      <StackLayout Margin="5,30,5,5">
+            <Label Text="I am page 2" HorizontalTextAlignment="Center" />   
+                   </StackLayout>
+                
+                
+            </DataTemplate>
+            
+            
+        </ListView.ItemTemplate>
+        
+    </ListView>
+    </ContentPage.Content>-->
+    <!--<ActivityIndicator IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}" Color="{x:Static common:ColorResources.ActivityIndicator}"/>-->
+      
+
+    <ContentPage.Content>
+        <AbsoluteLayout> 
+      <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+          
+            
+            <WebView x:Name="Browser"  WidthRequest="1000" HeightRequest="1000" Navigating="Browser_Navigating" Navigated="Browser_Navigated"/>
+           
+      </StackLayout>
+            <Frame AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5, AutoSize, AutoSize"
+       x:Name="loading"
+       
+       Opacity="0.9"
+       IsVisible="True">
+                <StackLayout>
+                    <ActivityIndicator IsRunning="True"/>
+                    <Label Text="Loading..."
+                           TextColor="Black"/>
+
+                </StackLayout>
+            </Frame>
+
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+</ContentPage>

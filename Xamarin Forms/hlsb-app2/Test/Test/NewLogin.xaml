@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+               
+             x:Class="Test.NewLogin"
+             
+             Title="   Holographic Label Sdn.Bhd."          
+             BackgroundColor="DeepSkyBlue"
+            
+             >
+    <!--xmlns:local="clr-namespace:Test"  Icon="Holo.png" -->
+    <!-- WidthRequest="20"
+             Padding="20"-->
+    <!--Padding="0, 20, 0, 0"-->
+
+   <!-- <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="300" />
+        </Grid.ColumnDefinitions>-->
+    <ScrollView>
+        <StackLayout Spacing="15" Padding="50"  VerticalOptions="Center">
+            <!--<StackLayout Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3">-->
+        <Label HorizontalTextAlignment="Center" Text="Login"  FontSize="30" ></Label>
+        <!--Grid.Row="0" Grid.Column="2"-->
+
+        <Entry Placeholder="Email"  x:Name="txtname"   ></Entry>
+        <!--Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"-->
+
+        <Entry IsPassword="True" x:Name="txtpassword" Placeholder="Password"  ></Entry>
+        <!--Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"-->
+            <Label Text="Enter your email and password on the two input fields at the top."></Label>
+            <Button Text="Test Login" Clicked="Test_Login"></Button>
+
+            <Label Text="Don't have account, register here "></Label>
+            <Button Text="Register" Clicked="Click_Reg" ></Button>
+<!--
+            <Label x:Name="sessionTxt" Text="Session Data: "></Label>
+            <Button Text="Test Session" Clicked="Test_Session"></Button>
+-->
+            
+
+            <!--<Label Text="Let's populate some products shall we?"></Label>-->
+            <Button Text="Test Populate Product" Clicked="Test_Product"></Button>
+
+
+            <ListView ItemsSource="{Binding productViewModel}" x:Name="listView" HasUnevenRows="true" SeparatorColor="Gray">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Text}" Detail="{Binding Detail}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </ScrollView>
+
+    <!--</Grid>-->
+
+</ContentPage>  

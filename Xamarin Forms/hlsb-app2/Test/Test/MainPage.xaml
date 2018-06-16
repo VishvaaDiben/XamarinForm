@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Test"
+             x:Class="Test.MainPage"
+             MasterBehavior="Popover"
+            >
+
+
+    <MasterDetailPage.Master>
+        <ContentPage  Title="Master" Padding="10" BackgroundColor="DarkSlateGray">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <!--<Label Text="Master Detail Page" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />-->
+                    <BoxView HeightRequest="1" WidthRequest="1"  Color="Gray"></BoxView>
+                    <Button Text="Home" BackgroundColor="Gray" TextColor="White" Image="ic_home_black_24dp.png" Clicked="Button_Clicked1" ></Button>
+
+                    <Button Text="Account" x:Name="txtname"  BackgroundColor="Gray" TextColor="White" Image="ic_account_circle_black_24dp.png" Clicked="Button_Clicked2"></Button>
+
+                   <!-- <Button Text="" BackgroundColor="Gray" TextColor="White" Image="ic_store_black_24dp.png" Clicked="Button_Clicked3"></Button>-->
+
+                    <Button Text="About" BackgroundColor="Gray" TextColor="White" Image="ic_info_black_24dp.png" Clicked="Button_Clicked7" ></Button>
+                    
+                    <Button Text="Help/Guide" BackgroundColor="Gray" TextColor="White" Image="ic_help_black_24dp.png" Clicked="Button_Clicked6"></Button>
+
+                    <Button Text="Product/Services" BackgroundColor="Gray" Image="ic_store_black_24dp.png"  TextColor="White"  Clicked="Button_Clicked5"></Button>
+                    <!--Button_Clicked5-->
+                    <Button Text="Scanner" BackgroundColor="Gray" TextColor="White" Image="ic_photo_camera_black_24dp.png" Clicked="Button_Clicked" ></Button>
+                    <!--Image="ic_photo_camera_black_24dp.png"-->
+                    <Button Text="Logout" BackgroundColor="Gray" TextColor="White" Image="ic_exit_to_app_black_24dp.png" Clicked="Button_Clicked8"></Button>
+                    
+                     
+                   
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="10">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Detail Page" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+                    <WebView x:Name="Browse"  WidthRequest="1000" HeightRequest="1000"/>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>

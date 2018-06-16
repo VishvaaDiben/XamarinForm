@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.PageX"
+            
+             >
+   
+
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand" >
+            <!--Margin="5,30,5,5"-->
+            <Grid VerticalOptions = "FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+                <Label TextColor="Black" Text="Welcome to Holo" Grid.Row = "0" Grid.Column = "0" VerticalOptions = "CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                <Button  Image="ic_photo_camera_black_24dp.png"   Text="Scan" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Button_Clicked" Grid.Row="1" Grid.Column = "1" Margin="20,20,20,20" />
+                <!--Margin="40,150,40,40"-->
+            </Grid>
+        </StackLayout>
+        </ContentPage.Content>
+    
+
+
+
+        <!-- <Label Text="I am menu page" HorizontalTextAlignment="Center" TextColor="Black"  /> -->
+         <!--   <Button  Image="ic_photo_camera_black_24dp.png"  Text="Scan" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Button_Clicked"/> -->
+            
+
+ </ContentPage>       
+     
+    
+   
+
+
+

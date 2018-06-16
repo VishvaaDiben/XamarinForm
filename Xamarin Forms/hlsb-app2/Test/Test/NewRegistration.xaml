@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="Test.NewRegistration"  
+               BackgroundColor="Azure"
+             WidthRequest="20"
+             Padding="20"
+             Icon="ic_account_circle_black_24dp.png">
+
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="300" />
+        </Grid.ColumnDefinitions>-->
+
+    <StackLayout Spacing="15" Padding="50"  VerticalOptions="Center">
+        <!--Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3"-->
+        <Label Text="Registration" HorizontalTextAlignment="Center"  FontSize="30" ></Label>
+
+        <Entry Placeholder="first" x:Name="txtname1"  ></Entry>
+        <Entry Placeholder="last" x:Name="txtname2"  ></Entry>
+        <Entry Placeholder="Email" x:Name="txtname"  ></Entry>
+        <!--<Entry Placeholder="UserID"  x:Name="txtuserid"  ></Entry>-->
+
+        <Entry IsPassword="True"  x:Name="txtpassword" Placeholder="Password" ></Entry>
+        <!--<Button Text="Register" Clicked="Click_Reg" ></Button>-->
+        
+        <Button Text="Already Have Account" Clicked="Click_Login"></Button>
+
+        <!--<Label x:Name="outputTxt" Text="Status: "></Label>-->
+        <Button Text="Test Register" Clicked="Test_Register"></Button>
+
+    </StackLayout>
+
+    
+
+</ContentPage>  

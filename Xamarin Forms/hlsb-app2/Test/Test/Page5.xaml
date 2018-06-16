@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Page5"
+             BackgroundColor="DarkGray"
+            Title="Guide"
+            xmlns:local ="clr-namespace:Test"
+           >
+
+    
+    <local:PageA></local:PageA>
+    
+    <local:PageB></local:PageB>
+
+    <local:PageC></local:PageC>
+    
+
+  
+
+
+</CarouselPage>
